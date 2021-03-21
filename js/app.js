@@ -44,8 +44,9 @@ sections.forEach( function(listElement) {
     const newLink = document.createElement("a");         // create new link
     const text = document.createTextNode(nav);           // create list item text
 
-    newLink.addEventListener("click" , function(){       // add event listener to the link
+    newLink.addEventListener("click" , function(link){       // add event listener to the link
         listElement.scrollIntoView({behavior:"smooth" , block : "start"});
+        link.preventDefault();
     });
 
     newLink.appendChild(text);                              // append list to document fragment
