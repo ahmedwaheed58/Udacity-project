@@ -1,4 +1,4 @@
-# Udacity-project
+# Udacity-project (Landing Page)
 Front End Web Development Professional
 
 feat: Add navigation menue dynamically, add responsive elements
